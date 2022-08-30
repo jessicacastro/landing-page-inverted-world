@@ -40,6 +40,7 @@ button {
 input, textarea {
   border: 2px solid var(--primary-color-contrast);
   background-color: var(--field-background-color);
+  color: #FFF;
   padding: 8px;
   margin-bottom: 24px;
   font-size: 1rem;

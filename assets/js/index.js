@@ -1,3 +1,11 @@
+import { getHellFireClubSubscriptions } from "./firebase/hellfire-club.js";
+
+window.onload = async () => {
+  const subscriptions = await getHellFireClubSubscriptions();
+  
+  alert(`Seja bem vindo ao Hellfire Club, aqui você pode se inscrever para participar de nossas aventuras. Já temos ${subscriptions.length} inscrito(s).`);
+}
+
 const switchTheme = () => {
   document.body.classList.toggle('dark-theme')
   document.body.classList.toggle('light-theme')
@@ -12,7 +20,6 @@ const switchTheme = () => {
   audio.play();
   audio.volume = 0.2;
 }
-
 
 document.addEventListener('click', () => {
   const audio = document.getElementById('music')
